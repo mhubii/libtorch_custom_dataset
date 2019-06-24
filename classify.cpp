@@ -17,7 +17,7 @@ int main(int arc, char** argv)
 
     // Load the model.
     ConvNet model(3/*channel*/, 64/*height*/, 64/*width*/);
-    // torch::load(model, "../best_model.pt");
+    torch::load(model, "../best_model.pt");
 
     // Predict the probabilities for the classes.
     torch::Tensor prob = model(img_tensor);

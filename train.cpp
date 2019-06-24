@@ -73,7 +73,7 @@ int main()
 
         if (mse < best_mse)
         {
-            torch::save(model, "best_model.pt");
+            torch::save(model, "../best_model.pt");
             best_mse = mse;
         }
     }  
