@@ -57,7 +57,7 @@ int main()
             if (batch_idx % log_interval == 0) 
             {
                 std::printf(
-                "\rTrain Epoch: %ld/%ld [%5ld/%5ld] Loss: %.4f",
+                "\rTrain Epoch: %d/%ld [%5ld/%5d] Loss: %.4f",
                 epoch,
                 n_epochs,
                 batch_idx * batch.data.size(0), 
