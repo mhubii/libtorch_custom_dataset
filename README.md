@@ -3,7 +3,7 @@ This is a short example on how to generate custom datasets for libtorch. The `Cu
 
 <br>
 <figure>
-  <p align="center"><img src="data/apples/img0.jpg" width="20%" height="20%" hspace="40"><img src="data/bananas/img0.jpg"      width="20%" height="20%" hspace="40"></p>
+  <p align="center"><img src="data/apples/img0.jpg" width="20%" height="20%" hspace="100"><img src="data/bananas/img0.jpg"      width="20%" height="20%" hspace="100"></p>
   <figcaption>Fig. 2: (Left) An apple in the dataset, (Right) a banana in the dataset.</figcaption>
 </figure>
 <br><br>
