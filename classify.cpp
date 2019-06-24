@@ -20,8 +20,12 @@ int main(int arc, char** argv)
     torch::load(model, "../best_model.pt");
 
     // Predict the probabilities for the classes.
-    torch::Tensor prob = model(img_tensor);
-    std::cout << prob << std::endl;
+    torch::Tensor log_prob = model(img_tensor);
+    torch::Tensor prob = torch::exp(log_prob);
+
+    printf("Probability of being\n\
+    an apple = %.2f percent\n\
+    a banana = %.2f percent\n", *(prob.data<float>())*100., *(prob.data<float>()+1)*100.);
 
     return 0;
 }

@@ -7,6 +7,8 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(train train.cpp)
 target_link_libraries(train ${TORCH_LIBRARIES} ${OpenCV_LIBRARIES})
+set_property(TARGET train PROPERTY CXX_STANDARD 11)
 
 add_executable(classify classify.cpp)
 target_link_libraries(classify ${TORCH_LIBRARIES} ${OpenCV_LIBRARIES})
+set_property(TARGET classify PROPERTY CXX_STANDARD 11)

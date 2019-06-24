@@ -23,7 +23,7 @@ int main()
     torch::optim::Adam optimizer(model->parameters(), torch::optim::AdamOptions(1e-3));
 
     // Train the network.
-    int64_t n_epochs = 100;
+    int64_t n_epochs = 10;
     int64_t log_interval = 10;
     int dataset_size = data_set.size().value();
 
