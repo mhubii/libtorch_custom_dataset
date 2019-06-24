@@ -1,5 +1,6 @@
 # Libtorch Custom Dataset
-This is a short example on how to generate custom datasets for libtorch. 
+This is a short example on how to generate custom datasets for libtorch. The `CustomDataset` class in [custom_dataset.h](custom_dataset.h) implements a `torch::data::Dataset`. It loads the image locations from [file_names.csv](file_names.csv) into a `std::vector<std::tuple<std::string, int>>`, so that the `CustomDataset` can load images at runtime with the [get](https://github.com/mhubii/libtorch_custom_dataset/blob/cd3d1028d074bf068924c82387d4520708b7ea8b/custom_dataset.h#L23) method. This avoids having all images in the memory, which maybe critical for GPUs.
+
 <br>
 <figure>
   <p align="center"><img src="data/apples/img0.jpg" width="20%" height="20%" hspace="40"><img src="data/bananas/img0.jpg"      width="20%" height="20%" hspace="40"></p>
