@@ -8,12 +8,12 @@ This is a short example on how to generate custom datasets for libtorch.
 <br><br>
 
 # Build
-Make sure to get libtorch running.
+Make sure to get libtorch running. For a clean installation from Anaconda, checkout this short [tutorial](https://gist.github.com/mhubii/1c1049fb5043b8be262259efac4b89d5), or this [tutorial](https://pytorch.org/cppdocs/installing.html), to only download the binaries.
 
 Clone this repository
 ```shell
 git clone https://github.com/mhubii/libtorch_custom_dataset.git
-cd libtorch_custrom_dataset
+cd libtorch_custom_dataset
 ```
 
 Build the executables
