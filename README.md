@@ -1,4 +1,4 @@
-# Libtorch Custrom Dataset
+# Libtorch Custom Dataset
 This is a short example on how to generate custom datasets for libtorch. 
 <br>
 <figure>
@@ -15,10 +15,7 @@ Clone this repository
 git clone https://github.com/mhubii/libtorch_custom_dataset.git
 cd libtorch_custrom_dataset
 ```
-Unzip the data
-```shell
-tar -zxvf data.tar.gz
-```
+
 Build the executables
 ```shell
 mkdir build
