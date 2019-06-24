@@ -5,7 +5,7 @@
 #include <vector>
 #include <tuple>
 
-// Read in the csv file and return file locations and labels as vector.
+// Read in the csv file and return file locations and labels as vector of tuples.
 auto ReadCsv(std::string& location) -> std::vector<std::tuple<std::string /*file location*/, int64_t /*label*/>> {
 
     std::fstream in(location, std::ios::in);
