@@ -39,4 +39,4 @@ cd build
 
 # Notes
 The dataset is a modified version of a dataset that can be found on [Kaggle](https://www.kaggle.com/sriramr/apples-bananas-oranges).
-Especially the training loop is inspired by an implementation of Peter Goldsburough for the MNIST dataset in the PyTorch [example repository](https://github.com/pytorch/examples/tree/master/cpp/mnist).
+Especially the training loop is inspired by an implementation of Peter Goldsborough for the MNIST dataset in the PyTorch [example repository](https://github.com/pytorch/examples/tree/master/cpp/mnist).
