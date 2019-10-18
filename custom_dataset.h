@@ -29,12 +29,12 @@ class CustomDataset : public torch::data::Dataset<CustomDataset>
             cv::Mat img = cv::imread(file_location);
 
             // Convert the image and label to a tensor.
-            torch::Tensor img_tensor = torch::from_blob(img.data, {img.rows, img.cols, 3}, torch::kByte);
+            torch::Tensor img_tensor = torch::from_blob(img.data, {img.rows, img.cols, 3}, torch::kByte).clone();
             img_tensor = img_tensor.permute({2, 0, 1}); // convert to CxHxW
 
             torch::Tensor label_tensor = torch::full({1}, label);
 
-            return {img_tensor.clone(), label_tensor.clone()};
+            return {img_tensor, label_tensor};
         };
 
         // Override the size method to infer the size of the data set.
