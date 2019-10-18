@@ -25,7 +25,7 @@ int main(int arc, char** argv)
 
     printf("Probability of being\n\
     an apple = %.2f percent\n\
-    a banana = %.2f percent\n", *(prob.data<float>())*100., *(prob.data<float>()+1)*100.);
+    a banana = %.2f percent\n", prob[0][0].item<float>()*100., prob[0][1].item<float>()*100.);
 
     return 0;
 }
